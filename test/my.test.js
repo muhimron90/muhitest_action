@@ -1,5 +1,5 @@
-import {describe, it,assert,expect } from "vitest"
-
+import {describe,it} from "node:test"
+import assert from "node:assert"
 /**
  * @param {number} a
  * @param {number} b
@@ -13,7 +13,7 @@ function lerp(a,b,t) {
 }
 describe("testme", () => {
   it("add", () => {
-     expect(2 + 2).toEqual(4)
+    assert.equal(2+2,4)
   })
   it("lerp", () => {
     assert.equal(lerp(2,4,0.5), 2)
